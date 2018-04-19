@@ -19,6 +19,7 @@ namespace MyGame
         }
         //
         //
+
         public void SetUpBoard (float x, float y)
         {
             for (int row = 0; row < 8; row++) {
@@ -27,7 +28,7 @@ namespace MyGame
                     y = row * 100;
                     if ((row % 2) == (col % 2)){
                         drawGreenShape (x, y);
-                       // SwinGame.DrawCircle (Color.Red, x+20, y+20,10);
+                       SwinGame.DrawCircle (Color.Red, x/2, y/2,10);
                     } else{
                         drawYellowShape (x, y);
                     }
