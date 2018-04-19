@@ -1,10 +1,12 @@
 ﻿using System;
 namespace MyGame
 {
-    public class Player
+    public abstract class Player
     {
+        string _name;
         public Player ()
         {
         }
+        public abstract void MovePieces ();
     }
 }

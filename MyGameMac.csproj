@@ -52,6 +52,8 @@
     <Compile Include="Board.cs" />
     <Compile Include="BoardDrawing.cs" />
     <Compile Include="Player.cs" />
+    <Compile Include="HumanPlayer.cs" />
+    <Compile Include="Piece.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">
