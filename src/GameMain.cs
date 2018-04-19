@@ -8,7 +8,7 @@ namespace MyGame
         public static void Main()
         {
             //Open the game window
-            SwinGame.OpenGraphicsWindow("GameMain", 1800, 1600);
+            SwinGame.OpenGraphicsWindow("GameMain", 800, 600);
            // SwinGame.ShowSwinGameSplashScreen();
             BoardDrawing drawing = new BoardDrawing ();
 

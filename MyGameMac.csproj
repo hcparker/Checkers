@@ -26,6 +26,7 @@
     <EnablePackageSigning>false</EnablePackageSigning>
     <CreatePackage>false</CreatePackage>
     <IncludeMonoRuntime>false</IncludeMonoRuntime>
+    <LinkMode>None</LinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <EnableCodeSigning>false</EnableCodeSigning>
@@ -50,6 +51,7 @@
     <Compile Include="src\GameMain.cs" />
     <Compile Include="Board.cs" />
     <Compile Include="BoardDrawing.cs" />
+    <Compile Include="Player.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SwinGame">
