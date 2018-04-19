@@ -28,7 +28,7 @@ namespace MyGame
                     y = row * 100;
                     if ((row % 2) == (col % 2)){
                         drawGreenShape (x, y);
-                       SwinGame.DrawCircle (Color.Red, x/2, y/2,10);
+                       SwinGame.FillCircle (Color.Red, x+100/2, y+100/2,10);
                     } else{
                         drawYellowShape (x, y);
                     }
