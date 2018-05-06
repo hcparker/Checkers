@@ -4,24 +4,29 @@ using System.Collections.Generic;
 
 namespace MyGame
 {
-    public static class Board
+    public class Board
     {
         static List<Cell> _Cells = new List<Cell> ();
         //
         //
-        public static void AddCellsToList(Cell cell){
+        public  void AddCellsToList(Cell cell){
             _Cells.Add (cell);
         }
         //
         //
-        public static List<Cell>GetCell{
+        public  List<Cell>GetCell{
             get{
                 return _Cells;
             }
         }
+        public Cell GetSingleCell{
+            get{
+                return _Cells[0];
+            }
+        }
         //
         // 
-        public static void MovePiece(){
+        public void MovePiece(){
             
         }
     }
