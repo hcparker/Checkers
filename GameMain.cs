@@ -28,6 +28,10 @@ namespace MyGame
                 // drawing cells on the board
                 BoardDrawing.DrawBoard (board);
                 BoardDrawing.DrawPieces (board);
+                if(SwinGame.MouseClicked(MouseButton.RightButton)){
+                    board.GetSingleCell.SelectedShapesAt (SwinGame.MousePosition ());  
+                }
+
                 //BoardSetup.SetupPices (board);
                 //Draw onto the screen
                 SwinGame.RefreshScreen(60);

@@ -82,6 +82,16 @@ namespace MyGame
         public void AddPieceToList (Piece piece){
             _pieces.Add (piece);
         }
+        //
+        //
+        //
+        // method which
+        public void SelectedShapesAt (Point2D pt)
+        {
+            foreach (Piece s in _pieces) {
+                s.Selected = s.IsAt (pt);
+            }
+        }
         public abstract bool DoYouHavePieceOnYou ();
         public abstract void MovePiece ();
 
