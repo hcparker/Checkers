@@ -11,8 +11,6 @@ namespace MyGame
         int _height;
         int _width;
         List<Piece> _pieces = new List<Piece> ();
-
-       // Piece _piece;
         public Cell(Color clr, int x, int y, int height, int width){
             _color = clr;
             _loc_x = x;

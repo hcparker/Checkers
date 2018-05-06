@@ -2,13 +2,13 @@
 using SwinGameSDK;
 namespace MyGame
 {
-    public class PieceTypeOne 
+    public class PieceTypeOne : Piece
     {
-        public PieceTypeOne ()
+        public PieceTypeOne (Color clr, int locX, int locY) : base (clr, locX,locY, 20)
         {
         }
 
-        public  void Move ()
+        public override void Move ()
         {
             //
             // this should only move diagnal and forward
