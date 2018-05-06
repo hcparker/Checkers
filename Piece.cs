@@ -4,10 +4,13 @@ namespace MyGame
 {
     public abstract class Piece
     {
-        Color clr = Color.Black;
+        Color color;
         Point2D location;
-        public Piece ()
+        // this can have list which player can access 
+        public Piece (Color clr, Point2D loc)
         {
+            color = clr;
+            location = loc;
         }
         public abstract void Move ();
     }

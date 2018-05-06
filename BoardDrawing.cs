@@ -2,40 +2,45 @@
 using SwinGameSDK;
 namespace MyGame
 {
-    public class BoardDrawing
+    public static class BoardDrawing
     {
-        public BoardDrawing ()
+     
+        public static void DrawRedPieces (float x, float y)
         {
-        }
-        public void drawGreenShape (float x, float y)
-        {
-            SwinGame.FillRectangle (Color.Green, x, y, 100, 100);
-            SwinGame.FillRectangle (Color.Green, x, y, 100, 100);
-        }
-        public void drawYellowShape (float x, float y)
-        {
-            SwinGame.DrawRectangle (Color.Yellow, x, y, 100, 100);
-            SwinGame.FillRectangle (Color.Yellow, x, y, 100, 100);
-        }
-        //
-        //
 
-        public void SetUpBoard (float x, float y)
-        {
-            for (int row = 0; row < 8; row++) {
+            for (int row = 0; row < 2; row++) {
                 for (int col = 0; col < 8; col++) {
-                    x = col *  100;
+                    x = col * 100;
                     y = row * 100;
-                    if ((row % 2) == (col % 2)){
-                        drawGreenShape (x, y);
-                       SwinGame.FillCircle (Color.Red, x+100/2, y+100/2,10);
-                    } else{
-                        drawYellowShape (x, y);
-                    }
+                    SwinGame.FillCircle (Color.Red, x + 100 / 2, y + 100 / 2, 20);
                 }
             }
+          
+        }
+        public static void DrawWhitePieces (float x, float y)
+        {
+            int count =4;
+            for (int row = 0; row < 2; row++) {
+                for (int col = 0; col < 8; col++) {
+                    x = col * 100;
+                    y = row + count * 100;
+                    //SwinGame.FillCircle (Color.Green, x + 100 / 2, y + 100 / 2, 20);
+                }
+                //for (int irow = 0; irow < 2; irow++) {
+                //    for (int col = 0; col < 8; col++) {
+                //        x = col * 100;
+                //        y = irow + 5 * 100;
+                //        SwinGame.FillCircle (Color.Green, x + 100 / 2, y + 100 / 2, 20);
+                //    }
 
+                //}
+            }
 
+        }
+        public static void DrawBoard(){
+            foreach (Cell cell in Board.GetCell) {
+                cell.drawShape ();
+            }
         }
 
     }

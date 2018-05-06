@@ -4,8 +4,9 @@ namespace MyGame
     public abstract class Player
     {
         string _name;
-        public Player ()
+        public Player (string nme)
         {
+            _name = nme;
         }
         public abstract void MovePieces ();
     }
