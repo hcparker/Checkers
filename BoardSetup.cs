@@ -6,8 +6,8 @@ namespace MyGame
 {
     public static class BoardSetup
     {
-        
-        
+
+
         public static void SetUpBoard (Board board)
         {
             int x = 0;
@@ -32,7 +32,8 @@ namespace MyGame
         // this will setup piece 
         // on top of board cells
         // 
-        public static void SetupPices(Board board){
+        public static void SetupPices (Board board)
+        {
             //
             // calling PicesTypeOne method
             SetupPicesTypeOne (board);
@@ -43,15 +44,16 @@ namespace MyGame
         //
         //
         // calling PicesTypeOne method
-        private static void SetupPicesTypeOne(Board board){
+        private static void SetupPicesTypeOne (Board board)
+        {
             int x, y;
             for (int row = 0; row < 3; row++) {
-                for (int col = 0; col < 8; col++) {
+                for (int col = 0; col < 4; col++) {
                     x = col * 200;
                     y = row * 100;
-                    if(row%2!=0){
-                        x = 100+ col *200;
-                        y = row * 100;  
+                    if (row % 2 != 0) {
+                        x = 100 + col * 200;
+                        y = row * 100;
                     }
                     //
                     // 
@@ -69,7 +71,7 @@ namespace MyGame
         {
             int x, y;
             for (int row = 5; row < 9; row++) {
-                for (int col = 0; col < 8; col++) {
+                for (int col = 0; col < 4; col++) {
                     x = col * 200;
                     y = row * 100;
                     if (row % 2 != 0) {
@@ -84,6 +86,6 @@ namespace MyGame
                 }
             }
         }
-  
+
     }
 }
